@@ -1,0 +1,26 @@
+{
+  "name": "cine-nights",
+  "version": "1.0.0",
+  "description": "An open source web application to create and join watchparties with friends.",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "author": "sahaj dave",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.3.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^10.0.1",
+    "mongoose": "^6.2.4",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "uuid": "^8.3.2"
+  }
+}
