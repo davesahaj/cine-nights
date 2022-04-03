@@ -1,6 +1,7 @@
 import "./Room.scss";
 import { useEffect, useState, useRef } from "react";
 import ChatMessage from "./ChatMessage";
+import VideoScreen from "./VideoScreen";
 import { useSelector, useDispatch } from "react-redux";
 import { setUser, resetUser } from "../../features/userSlice";
 import { useParams } from "react-router";
@@ -107,7 +108,7 @@ const Room = () => {
   return (
     <div className="room-container">
       <div className="video-wrapper">
-        <div className="video-screen"></div>
+      {user.name ? (<VideoScreen />) : null}
       </div>
 
       <div className="chat-wrapper">
